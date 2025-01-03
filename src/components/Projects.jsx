@@ -12,7 +12,7 @@ function Projects() {
             end: "2024.10.01",
             tech: ["Java", "Javascript", "HTML5", "css", "Tailwind", "JQuery", "AJAX"],
             source: "https://github.com/Pive0528/24_08_Spring_Handari_2",
-            intro: "https://g-sa.koreaisacademy.com/community/project_view.asp?idxnum=323"
+            intro:"test"
         },
         {
             title: "팀 프로젝트 - StarInfoWeb",
@@ -22,7 +22,8 @@ function Projects() {
             end: "2024.12.16",
             tech: ["Java", "Javascript", "Python", "React", "css", "scss", "pixi", "JWT"],
             source: "https://github.com/24-10-astroneer-team-project/24_10_star_info_web",
-            intro: "https://g-sa.koreaisacademy.com/community/project_view.asp?idxnum=333"
+            intro:"test",
+            video: "test"
         },
         {
             title: "Todo List App",
