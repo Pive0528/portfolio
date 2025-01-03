@@ -7,13 +7,14 @@ background-size: contain;
 background-repeat: no-repeat;
 background-position: center;
 `;
-function Card({ proj }) {
+
+function Card ({proj}) {
+
     const onAlert = () => {
         if (proj.source === '#projects' || proj.detail === '#projects') {
             alert('준비 중 입니다 : )');
         }
-    };
-
+    }
     return (
         <div className="projects-item">
             <CardFront className="project-front" ImgSrc={`${process.env.PUBLIC_URL}/images/${proj.image}`}>
@@ -29,25 +30,30 @@ function Card({ proj }) {
                 </div>
                 <div className="back-inner time">
                     <h4># Period</h4>
-                    <p>{proj.start} ~ {proj.end}</p>
+                    <p> {proj.start} ~ {proj.end}</p>
                 </div>
                 <div className="back-inner tech">
                     <h4># Tech</h4>
                     <ul className="lang">
-                        {proj.tech.map((ele) => (
-                            <li key={`${proj.title}-${ele}`}>{ele}</li>
-                        ))}
+                        {proj.tech.map((ele) => {
+                        return(<li key={`${proj.title}-${ele}`}>{ele}</li>);
+                        })}
                     </ul>
+                </div>
+                <div className="back-inner work">
                 </div>
                 <div className="btn-group" onClick={onAlert}>
                     <a href={proj.source}>
-                        <button>Source Code</button>
+                        <button>깃허브 소스코드</button>
                     </a>
-                    {proj.intro && ( // intro가 존재할 때만 버튼 렌더링
-                        <a href={proj.intro}>
-                            <button>코리아IT아카데미 프로젝트 소개</button>
-                        </a>
-                    )}
+                    {proj.intro && (
+                    <a href={proj.intro}>
+                        <button>프로젝트 소개</button>
+                    </a>)}
+                    {proj.video && (
+                    <a href={proj.video}>
+                        <button>시연영상</button>
+                    </a>)}
                 </div>
             </div>
         </div>

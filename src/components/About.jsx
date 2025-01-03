@@ -34,17 +34,18 @@ function About() {
                         <ul>
                             <li><GoPerson/><span>박태은</span></li>
                             <li><GoMail/><span>pive0528@gmail.com</span></li>
-                            <li><GoMortarBoard/><span>대전지족고등학교</span></li>
-                            <li>( 2016.03 ~ 2019.02 )</li>
-                            <li><GoMortarBoard/><span>우송대학교 - IT융합학부 컴퓨터정보보안과</span></li>
-                            <li>( 2019.02 ~ 2024.02 )</li>
                             <li><GoMortarBoard/><span>코리아IT아카데미 </span></li>
                             <li>프롬프트 AI & Open API & 공공데이터를 활용한 웹/앱 개발자 과정</li>
                             <li>( 2024.05 ~ 2024.12 )</li>
+                            <li><GoMortarBoard/><span>우송대학교 - IT융합학부 컴퓨터정보보안과</span></li>
+                            <li>( 2019.02 ~ 2024.02 )</li>
+                            <li><GoMortarBoard/><span>대전지족고등학교</span></li>
+                            <li>( 2016.03 ~ 2019.02 )</li>
                         </ul>
                         <ul>
                             <li>
-                                <a href="https://github.com/Pive0528" title={"클릭하면 깃허브 페이지로 이동합니다."}><GoMarkGithub/><span>Github</span></a>
+                                <a href="https://github.com/Pive0528"
+                                   title={"클릭하면 깃허브 페이지로 이동합니다."}><GoMarkGithub/><span>Github</span></a>
                             </li>
                             <li>
                                 <a href="https://velog.io/@pive0528" title={"클릭하면 벨로그 페이지로 이동합니다."}><SiBloglovin/><span>My BLOG</span></a>
