@@ -65,4 +65,6 @@ function initBlobs() {
     requestAnimationFrame(update);
 }
 
-initBlobs();
+document.addEventListener('DOMContentLoaded', () => {
+    initBlobs();
+});
