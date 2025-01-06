@@ -1,0 +1,12 @@
+@mixin font-face($name, $file, $weight: noraml) {
+
+    @font-face {
+        font-family: "#{$name}";
+        // src: url('/src/fonts/#{$file}.ttf') format('truetype');
+        src: url('./fonts/#{$file}.ttf') format('truetype');
+        font-weight: $weight;
+    }
+}
+
+// @include font-face('설정할 폰트 이름', '폰트 파일 이름');
+// @include font-face('설정할 폰트 이름', '폰트 파일 이름', bold);

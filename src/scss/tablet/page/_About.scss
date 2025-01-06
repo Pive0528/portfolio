@@ -1,0 +1,78 @@
+@include tablet() {
+    #about {
+        .about-inner {
+            padding: 10px 30px;
+        }
+
+        #introduction {
+            height: 350px;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 1.5;
+            text-align: center;
+            color: rgba(0, 0, 0, .7);
+
+            .typeit {
+                height: 60px;
+                margin-bottom: 40px;
+            }
+
+            p {
+                font-size: 18px;
+                font-weight: 400;
+            }
+        }
+
+        #profile {
+            width: 80%;
+            margin: 20px auto;
+            padding-bottom: 20px;
+            background-color: #fff;
+            box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, .25);
+
+            h2 {
+                margin: 20px 0;
+            }
+
+            .profile-inner {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+
+            .profile-img {
+                display: flex;
+                width: 240px;
+                height: 320px;
+                border-radius: 10%;
+                background-image: url('../../../../public/images/Profile_image.png');
+                background-size: cover;
+            }
+
+            .profile-list {
+                width: 300px;
+                font-size: 16px;
+                color: rgba(0, 0, 0, .7);
+
+                ul {
+                    width: 330px;
+
+                    li {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 12px;
+
+                        span {
+                            padding-left: 12px;
+                        }
+                    }
+
+                    &:last-child {
+                        margin-top: 28px;
+                    }
+                }
+            }
+        }
+    }
+
+}

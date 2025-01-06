@@ -1,0 +1,161 @@
+@include desktop() {
+    .projects-item {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: 1.8s;
+        transform-style: preserve-3d;
+        box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, .18);
+        cursor: pointer;
+
+        h3 {
+            font-weight: 600;
+            margin: 10px 0;
+        }
+
+        .project-front,
+        .project-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+
+        .project-front {
+            .info {
+                display: none;
+            }
+
+            &:hover {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                line-height: 1.5;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, .45);
+                }
+
+                .info {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid #fff;
+                    width: 70%;
+                    height: 70%;
+                    z-index: 1;
+
+                    .title {
+                        color: #fff;
+                        font-size: 18px;
+                    }
+
+                    .click-msg {
+                        padding-top: 10px;
+                        font-size: 16px;
+                        color: #CAF7E3;
+                        // border-bottom: 1px solid #fff;
+                    }
+                }
+            }
+        }
+
+        .project-back {
+            transform: rotateY(180deg);
+            padding: 10px 16px;
+            font-size: 12px;
+            background: #fff;
+
+            h3 {
+                font-weight: 700;
+                font-size: 18px;
+                color: #4C4C6D;
+            }
+
+            h4 {
+                margin-right: 10px;
+                font-weight: 600;
+                font-style: italic;
+            }
+
+            .back-inner {
+                margin-bottom: 12px;
+            }
+
+            .detail {
+                p {
+                    word-break: keep-all;
+                    line-height: 1.4;
+                }
+            }
+
+            .time {
+                display: flex;
+            }
+
+            .tech {
+
+                // display: flex;
+                h4 {
+                    margin-bottom: 8px;
+                }
+
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    li {
+                        line-height: 1.2;
+                        margin-right: 8px;
+                    }
+                }
+            }
+
+            .work {
+                h4 {
+                    margin-bottom: 8px;
+                }
+
+                ul {
+
+                    // display: grid;
+                    // grid-template-columns: repeat(2, 1fr);
+                    // width: 80%;
+                    li {
+                        line-height: 1.2;
+                        margin-right: 6px;
+
+                        .dot {
+                            margin-right: 4px;
+                        }
+                    }
+                }
+            }
+
+            .btn-group {
+                button {
+                    margin-right: 10px;
+                    padding: 4px 8px;
+                    border: none;
+                    border-radius: 12px;
+                    color: #fff;
+                    background-color: #FFC3C3;
+                    cursor: pointer;
+                    transition: all 0.2s linear;
+
+                    &:focus,
+                    &:hover {
+                        background-color: #F47C7C;
+                    }
+                }
+            }
+
+        }
+    }
+}
