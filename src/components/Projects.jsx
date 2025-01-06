@@ -23,7 +23,7 @@ function Projects() {
             tech: ["Java", "Javascript", "Python", "React", "css", "scss", "pixi", "JWT"],
             source: "https://github.com/24-10-astroneer-team-project/24_10_star_info_web",
             intro:"test",
-            video: "test"
+            video: "http://youtu.be/Y8J2nk5eEjA"
         },
         {
             title: "Todo List App",
@@ -41,7 +41,7 @@ function Projects() {
             start: "2024.12.26",
             end: "2024.12.31",
             tech: ["HTML5", "React", "Java", "JavaScript", "scss", "css"],
-            source: "https://pive0528.github.io/portfolio/",
+            source: "https://github.com/Pive0528/portfolio",
         }
     ]
     const [flipAll, setFlipAll] = useState(false);

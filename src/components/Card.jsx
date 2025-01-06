@@ -1,14 +1,14 @@
 import React from "react";
 import styled from 'styled-components';
 
-const CardFront=styled.div`
+const CardFront = styled.div`
     background-image: url(${props => props.ImgSrc});
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 `;
 
-function Card ({proj}) {
+function Card({proj}) {
 
     const onAlert = () => {
         if (proj.source === '#projects' || proj.detail === '#projects') {
@@ -36,7 +36,7 @@ function Card ({proj}) {
                     <h4># Tech</h4>
                     <ul className="lang">
                         {proj.tech.map((ele) => {
-                            return(<li key={`${proj.title}-${ele}`}>{ele}</li>);
+                            return (<li key={`${proj.title}-${ele}`}>{ele}</li>);
                         })}
                     </ul>
                 </div>
@@ -52,7 +52,7 @@ function Card ({proj}) {
                         </a>)}
                     {proj.video && (
                         <a href={proj.video}>
-                            <button>시연영상</button>
+                            <button>시연영상 - Youtube</button>
                         </a>)}
                 </div>
             </div>
