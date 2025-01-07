@@ -1,0 +1,58 @@
+@include desktop() {
+    #projects {
+        .flipBtn {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 980px;
+            margin: 0 auto;
+
+            .filp-all {
+                width: 100px;
+                padding: 10px;
+                text-align: center;
+                font-size: 16px;
+                color: rgba(0, 0, 0, .45);
+                background-color: #fff;
+                border: 1px solid rgba(0, 0, 0, .45);
+                cursor: pointer;
+                transition: background-color 1s;
+
+                &:hover {
+                    color: #fff;
+                    background-color: rgba(0, 0, 0, .7);
+                    border: 1px solid rgba(0, 0, 0, .7);
+                }
+            }
+        }
+
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 280px;
+            gap: 0px 10px;
+            justify-content: center;
+            justify-items: center;
+            width: 980px;
+            margin: 20px auto 0;
+
+            .flip {
+                width: 320px;
+                height: 240px;
+                perspective: 1100px;
+                background: #fff;
+
+                &.active {
+                    .projects-item {
+                        transform: rotateY(180deg);
+
+                        .project-front::after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

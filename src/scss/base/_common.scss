@@ -1,0 +1,24 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+#root {
+  // position: relative;
+  // background-color: antiquewhite;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.small_hr {
+  width:30%;
+  border:0.5px #f6f0f9 solid;
+}

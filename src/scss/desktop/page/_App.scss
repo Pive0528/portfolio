@@ -1,0 +1,27 @@
+@include desktop() {
+    .App {
+        position: relative;
+        font-family: 'Nanum Gothic', sans-serif;
+
+        // background-color: rgb(51, 60, 68);
+        .container {
+            width: 90vw;
+            margin: 0 auto;
+        }
+
+        section {
+            padding: 150px 0;
+            border-bottom: 2px dashed rgb(206, 184, 184);
+
+            &#contact {
+                border: none;
+            }
+
+            h2 {
+                font-size: 36px;
+                font-weight: 700;
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+@include mobile() {
+    .App {
+
+        .container {
+            width: 90vw;
+            margin: 0 auto;
+        }
+
+        section {
+            padding: 50px 0;
+            border-bottom: 2px dashed rgb(206, 184, 184);
+            &#contact {
+                border: none;
+            }
+            h2 {
+                font-size: 20px;
+                font-weight: 700;
+                text-align: center;
+            }
+        }
+    }
+}

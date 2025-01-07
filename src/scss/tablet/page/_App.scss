@@ -1,0 +1,22 @@
+@include tablet() {
+
+    .App {
+
+        .container {
+            margin: 0 auto;
+        }
+
+        section {
+            padding: 120px 0 100px;
+            border-bottom: 2px dashed rgb(206, 184, 184);
+            &#contact {
+                border: none;
+            }
+            h2 {
+                font-size: 28px;
+                font-weight: 700;
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,72 @@
+@include mobile() {
+    #skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        ul {
+            margin-top: 16px;
+            width: 100%;
+
+            li {
+                display: flex;
+                justify-content: space-between;
+                display: flex;
+                margin-top: 14px;
+
+                .skill-name {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 120px;
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: rgba(0, 0, 0, .7);
+                }
+
+                .ability-bar {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 90%;
+                    height: 16px;
+                    padding: 0 1px;
+                    background-color: #eee;
+                    border-radius: 4px;
+                    box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, .18);
+
+                    .ability-percent {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        height: 16px;
+                        border-radius: 0 8px 8px 0;
+                        background: linear-gradient(90deg, rgba(254, 233, 178, 1) 0%, rgba(255, 200, 152, 1) 100%);
+                        animation: SkillUp 2s linear;
+
+                        .percent {
+                            color: #fff;
+                            font-size: 11px;
+                            padding-right: 7px;
+                        }
+                    }
+
+                    p {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+
+        @keyframes SkillUp {
+            0% {
+                width: 10%;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+    }
+}

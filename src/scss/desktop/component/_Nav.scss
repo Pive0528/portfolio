@@ -1,0 +1,44 @@
+@include desktop() {
+    header {
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100px;
+        z-index: 99;
+
+        .header-inner {
+            background-color: #fff;
+
+            .container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 80px;
+
+                #logo {
+                    font-family: 'Billabong';
+                    font-size: 36px;
+                }
+
+                nav {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 500px;
+                    font-size: 20px;
+
+                    a {
+                        text-decoration: none;
+                        color: #333;
+                        transition: color 0.3s ease, transform 0.3s ease; /* 부드러운 색상 및 크기 변경 효과 */
+
+                        &:hover {
+                            color: rgba(51, 51, 51, 0.6); /* 글씨 색이 흐려짐 */
+                            transform: scale(1.05); /* 글씨가 약간 커짐 */
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
